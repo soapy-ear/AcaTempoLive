@@ -8,7 +8,13 @@
     "install-client": "cd client && npm install",
     "build-client": "cd client && npm run build",
     "start-client": "cd client && npm run start"
-   },
+  },
+  "dependencies": {
+    "cra-template": "1.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
