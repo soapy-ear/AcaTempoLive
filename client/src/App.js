@@ -21,7 +21,7 @@ import MyProfile from "./components/MyProfile";
 import ModuleDetails from "./components/ModuleDetails";
 
 function App() {
-  const [message, setMessage] = useState("");
+  //const [message, setMessage] = useState("");
   useEffect(() => {
     fetch("https://acatempolive-backend.onrender.com")
       .then((res) => res.json());
@@ -46,7 +46,7 @@ function App() {
           {/* Authentication Routes */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          
+
           {/* Error Page */}
           <Route path="*" element={<Error />} />
         </Routes>
