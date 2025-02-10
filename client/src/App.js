@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { responsivePropType } from "react-bootstrap/esm/createUtilityClasses";
 import "./App.css";
 
 function App() {
