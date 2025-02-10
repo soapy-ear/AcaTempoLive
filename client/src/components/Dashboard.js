@@ -22,19 +22,6 @@ const Dashboard = () => {
   ]);
 
   const navigate = useNavigate();
-  const [currentDate, setCurrentDate] = useState("");
-
-  useEffect(() => {
-    const today = new Date();
-    const options = {
-      weekday: "long",
-      day: "numeric",
-      month: "long",
-      year: "numeric",
-    };
-    const formattedDate = today.toLocaleDateString("en-GB", options);
-    setCurrentDate(formattedDate);
-  }, []);
 
   return (
     <Fragment>
@@ -78,18 +65,6 @@ const Dashboard = () => {
 
           <div className="schedule-box">
             <h2>Today's Schedule</h2>
-            <p className="current-date">{currentDate}</p>
-            {schedule.length > 0 ? (
-              <ul>
-                {schedule.map((item, index) => (
-                  <li key={index}>
-                    <strong>{item.time}</strong>: {item.course} - {item.room}
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p>No classes scheduled for today.</p>
-            )}
           </div>
         </div>
       </div>
