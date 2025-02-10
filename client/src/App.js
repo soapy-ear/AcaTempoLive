@@ -28,29 +28,8 @@ function App() {
   }, []);
   return (
     <Fragment>
-      <Router>
-        <Routes>
-
-          {/* Dashboard as default / temp landing page */}
-          <Route path="/" element={<Navigate replace to="/dashboard" />} />
-
-          {/* Each page is a top-level route */}
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/modreg" element={<ModReg />} />
-          <Route path="/timetable" element={<Timetable />} />
-          <Route path="/manage-modules" element={<ManageModules />} />
-          <Route path="/list-modules" element={<ListModules />} />
-          <Route path="/profile" element={<MyProfile />} />
-          <Route path="/module-details" element={<ModuleDetails />} />
-
-          {/* Authentication Routes */}
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-
-          {/* Error Page */}
-          <Route path="*" element={<Error />} />
-        </Routes>
-      </Router>
+      <h1>Welcome to AcaTempo</h1>
+   
     </Fragment>
   );
 }
