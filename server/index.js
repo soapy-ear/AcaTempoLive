@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5001
 
 //middleware
 const corsOptions = {
-  origin: "http://localhost:3000"
+  origin: "https://acatempolive.onrender.com",
 };
 app.use(cors(corsOptions));
 
