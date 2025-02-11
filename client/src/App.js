@@ -7,6 +7,19 @@ import {
   Navigate
 } from "react-router-dom";
 
+//Components
+import Navbar from "./components/Navbar"; 
+import Dashboard from "./components/Dashboard";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import ModReg from "./components/ModReg";
+import Error from "./components/Error";
+import Timetable from "./components/Timetable";
+import ManageModules from "./components/ManageModules";
+import ListModules from "./components/ListModules";
+import MyProfile from "./components/MyProfile";
+import ModuleDetails from "./components/ModuleDetails";
+
 function App() {
   const [message, setMessage] = useState("");
   useEffect(() => {
