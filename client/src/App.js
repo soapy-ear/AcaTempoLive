@@ -25,14 +25,18 @@ function App() {
   useEffect(() => {
     fetch("https://acatempolive-backend.onrender.com")
       .then((res) => res.json())
-      .then((data) => setMessage(data.message));
+      .then((data) => setMessage(data.message))
+      .catch((error) => console.error("Error fetching message:", error));
   }, []);
   return (
     <Fragment>
-      <div className="App">
-        <h1>{message}</h1>
-        <h1>Welcome to AcaTempo</h1>
-      </div>
+      <Router>
+        <Navbar />
+        <div className="App">
+          <h1>{message}</h1>
+          <h1>Welcome to AcaTempo</h1>
+        </div>
+      </Router>
     </Fragment>
   );
 }
