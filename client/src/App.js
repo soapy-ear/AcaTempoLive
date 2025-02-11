@@ -15,11 +15,22 @@ function App() {
       .then((data) => setMessage(data.message));
   }, []);
   return (
-    <div className="App">
-      <h1>{message}</h1>
-      <h1>Welcome to AcaTempo</h1>
-    </div>
+    <Fragment>
+      <div className="App">
+        <h1>{message}</h1>
+        <h1>Welcome to AcaTempo</h1>
+      </div>
+      <Router>
+        <Navbar />
+        <div className="container">
+          <Routes>
+            <Route exact path ="/dashboard" />
+          </Routes>
+        </div>
+      </Router>
+    </Fragment>
   );
 }
 
 export default App;
+ 
