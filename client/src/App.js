@@ -30,13 +30,10 @@ function App() {
   }, []);
   return (
     <Fragment>
-      <Router>
-        <Navbar />
         <div className="App">
           <h1>{message}</h1>
           <h1>Welcome to AcaTempo</h1>
         </div>
-      </Router>
     </Fragment>
   );
 }
